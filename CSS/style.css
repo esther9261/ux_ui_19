@@ -1,0 +1,393 @@
+body{
+    background-color: #fbfbfb;
+    margin: 0px;
+    padding: 0px;
+}
+/* Navigation styles */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0px 5vw;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+.small_logo{
+    width: 15%;
+    height: auto;
+}
+.myname{
+    color: #353C62;
+    font-size: 18px;
+    font-family: Playfair+Display;
+    font-weight: 700;
+    text-decoration: none;
+}
+.navItems{
+    display: flex;
+    
+}
+.navItems a{
+    margin:30px;
+    color: #353C62;
+    font-size: 18px;
+    font-family: Playfair+Display;
+    font-weight: 700;
+    text-decoration: none;
+}
+.padding{
+    margin: 10px;
+}
+
+/* herosection styles */
+.heroSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 8vh 0px;
+    height: 65vh;
+}
+.heroImage{
+    width: 45%;
+    height: auto;
+    z-index: -30;
+}
+.introtext{
+    position: relative;
+    right: 100px;
+}
+
+/* worksection */
+
+.workSection{
+    margin: 10vh 0vh;
+}
+
+.works{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.gridImage{
+    width: 40vw;
+    margin: 0px;
+    padding: 8px;
+    display: block; 
+}
+
+.hoverlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white
+}
+.overlay:hover .hoverlay{
+    opacity: 0.8;
+  }
+
+.inside-text{
+    margin: 10px;
+    font-size: 18px;
+    font-family: yantramanav;
+    
+}
+
+.gridHead{
+    width: 40vw;
+    margin-bottom: 10px;
+    display: block;
+    color: #353C62;
+    font-size: 25px; 
+}
+
+/* footer */
+footer{
+    background-color: #F0F1F6;
+    align-items: center;
+}
+
+.footerContents{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    /* margin: 0px 5vw; */
+}
+
+
+.h1text{
+    margin: 2px 0px;
+    color: #353C62;
+    font-size: 30px;
+    font-family: Playfair+Display;
+    font-weight: 700;
+}
+.pText{
+    margin: 2px 0px;
+    color: #353C62;
+    font-size: 30px;
+    font-family: Playfair+Display;
+    font-weight: 400;
+}
+
+
+.footerlinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    /* font-size: 30px; */
+    width: 30vw;
+}
+
+.contactInfo a{
+    padding: 5px 0px;
+    color: #353C62;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+   text-decoration: none;
+   font-family: Yantramanav;
+    font-weight: 700;
+}
+.social a{
+    padding: 5px 0px;
+    color: #353C62;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Yantramanav;
+    font-weight: 700;
+}
+
+.footerMsg{
+    width: 50vw;
+}
+
+.contactInfo{
+    padding: 0px 30px;
+}
+.social{
+    padding: 0px 20px;
+}
+
+.mobile{
+    display: none;
+}
+.overlay{
+    position: relative;
+}
+.text-overlay{
+    display: none;
+}
+.full
+{
+    display: inline;
+}
+
+.tab{
+    display: none;
+}
+
+.mob{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .navItems{
+        display: none;
+    }
+    .mobile{
+        display: inline-block;
+    }
+
+/* herosection styles */
+
+.heroSection{
+    height: 40vh;
+}
+    .heroImage{
+        margin-left: 10vw;
+    }
+    .introtext{
+        right: 80px;    
+    }
+   
+/* worksection styles */
+
+     .text-overlay{
+        display: inline-block;
+        position: absolute; 
+        left: 1vw; 
+        bottom: 1vw;
+        width: 40vw; 
+        background:rgba(0,0,0);
+        opacity:0.5;
+        color: white;
+
+    } 
+    .inside-text{
+        margin: 10px;
+        font-size: 18px;
+        font-family: yantramanav;
+    }
+
+    .bold{
+        font-weight: 700;
+    }
+
+    /* footer */
+
+    .footerlinks{
+        flex-wrap: wrap;
+    }
+    
+    .tablet{
+        width: 80vw;
+    }
+
+    .contactInfo{
+        padding: 0px 20px;
+    }
+    .social{
+        padding: 0px 20px;
+    }
+
+    .h1text{
+        font-size: 25px;
+    }
+    .pText{
+        font-size: 25px;
+    }
+
+    .footerContents{
+     height: 200px;
+     padding-top: 65px ;
+     /* top: 50%; */
+     align-items: baseline;   
+    }
+
+
+    .full{
+        display: none;
+    }
+
+    .tab{
+        display: inline;
+    }
+
+    .mob{
+        display: none;
+    }
+    
+
+}
+
+@media only screen and (max-width: 420px) {
+    
+    
+    .heroSection{
+        height: 30vh;
+    }
+
+    .introtext{
+        right: 55vw;    
+    }
+    
+    .heroImage{
+        width: 70vw;
+        margin-left: 55vw;
+    }
+    
+    .gridImage{
+        width: 80vw;
+        padding: 10px 0px;
+    }
+
+    .gridHead{
+        font-size: 18px; 
+    }
+    
+    .text-overlay{
+        display: inline-block;
+        position: absolute; 
+        left: 0vw; 
+        bottom: 0vw;
+        width: 80vw; 
+        background:rgba(0,0,0);
+        opacity:0.5;
+        color: white;
+    }
+    
+       
+    
+    .footerContents{
+        padding-top: 0px ;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        height: 250px;
+    }
+    .footerMsg{
+        width: 80vw;
+    }
+    .footerlinks{
+        width: 80vw;
+    }
+    .h1text{
+        font-size: 18px;
+        width: 70vw;
+    }
+    .pText{
+        font-size: 18px;
+    }
+
+    .contactInfo a{
+        font-size: 15px;
+    }
+
+    .social a{
+        font-size: 15px;
+    }
+
+    .contactInfo{
+        padding: 0px
+    }
+
+    .social{
+        padding: 0px;
+    }
+
+    .full{
+        display: none;
+    }
+
+    .tab{
+        display: none;
+    }
+
+    .mob{
+        display: inline;
+    }
+}
