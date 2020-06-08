@@ -2,6 +2,8 @@ body{
     background-color: #fbfbfb;
     margin: 0px;
     padding: 0px;
+    /* max-width: 100vw; */
+    /* overflow-x: hidden; */
 }
 /* Navigation styles */
 .navigation{
@@ -11,6 +13,9 @@ body{
     justify-content: space-between; 
     align-items: center;
     margin: 0px 5vw;
+}
+.underline{
+    border-bottom: 4px solid #353C62;
 }
 .logo{
     display:flex;

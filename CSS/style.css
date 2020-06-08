@@ -12,6 +12,9 @@ body{
     align-items: center;
     margin: 0px 5vw;
 }
+.underline{
+    border-bottom: 4px solid #353C62;
+}
 .logo{
     display:flex;
     align-items: center;
